@@ -344,7 +344,11 @@ span {
 }
 
 
+/* PROJECTS */
 
+.projects {
+    background-color: var(--second-bg-color);
+}
 
 
 /* Services */

@@ -350,6 +350,139 @@ span {
     background-color: var(--second-bg-color);
 }
 
+.projects .project-info h4 {
+    font-size: 1.6rem;
+}
+
+.projects .project-info h5 {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.projects .project-info h6 {
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+
+.projects .project-info p {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.projects .project-info span {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-top: 10px;
+}
+
+.diagram {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.diagram img {
+    border: 15px solid var(--text-color);
+    border-radius: 20px;
+}
+
+.projects-card-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.projects-container-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 480px;
+    max-width: 500px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    color: white;
+    margin: 20px 0px;
+    overflow: hidden;
+}
+
+.project-name {
+    width: 93.5%;
+    height: inherit;
+    text-align: center;
+    background-color: var(--bg-skills);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.project-name:hover {
+    transform: scale(1.02);
+    filter: drop-shadow(0 0 8px var(--main-color));
+}
+
+.card-name {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.projects-flip-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    max-width: 95%;
+    perspective: 50rem;
+    margin-top: 10px;
+
+}
+
+.projects-flip-container .front-side img {
+    border-radius: 20px;
+    width: 100%;
+    height: 85%;
+}
+
+.front-side {
+    position: absolute;
+    border-radius:  20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 450ms;
+    transform-style: preserve-3d;
+    visibility: visible;
+}
+
+.back-side {
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    visibility: hidden;
+    transform: rotateY(180deg); 
+    transition: transform 450ms;
+    transform-style: preserve-3d;
+    background-color: var(--main-color);
+    color: var(--bg-text-color)
+
+}
+
+.projects-flip-container:hover .front-side {
+    transform: rotateY(180deg);
+    visibility: hidden;
+}
+
+.projects-flip-container:hover .back-side {
+    transform: rotateY(0deg);
+    visibility: visible;
+}
 
 /* Services */
 

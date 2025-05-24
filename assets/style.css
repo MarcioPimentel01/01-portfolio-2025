@@ -391,7 +391,7 @@ span {
 
 .projects-card-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     
 }
@@ -399,7 +399,7 @@ span {
 .projects-container-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 480px;
     max-width: 500px;
